@@ -21,12 +21,22 @@ body,
   overflow-y: hidden;
 }
 
+body .instruc,
+body .instruc1,
+body .instruc2,
+.main .instruc,
+.main .instruc1,
+.main .instruc2 {
+  padding: 0px 10px;
+}
+
 body h1,
 .main h1 {
   font-size: 2rem;
   text-align: center;
   height: 10vh;
   padding-top: 5vh;
+  width: 100%;
   -webkit-animation: 1s movedown ease-in-out forwards;
           animation: 1s movedown ease-in-out forwards;
 }
@@ -52,9 +62,9 @@ body .warn2,
   font-size: 3rem;
   color: white;
   text-align: center;
-  width: 500px;
+  width: 100%;
   margin-left: 50%;
-  padding-top: 100px;
+  padding-top: 150px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   cursor: pointer;
@@ -72,7 +82,7 @@ body .warn,
   padding-top: 2vh;
   padding-bottom: 50px;
   cursor: pointer;
-  width: 400px;
+  width: 100%;
   margin: auto;
 }
 
@@ -82,7 +92,31 @@ body .warn:hover,
           animation: .5s shake infinite ease-in forwards;
 }
 
-.shake1 {
+@media screen and (max-width: 500px) {
+  body h1,
+  .main h1 {
+    font-size: 1.5rem;
+  }
+  body .none,
+  .main .none {
+    display: none;
+  }
+  body .big,
+  .main .big {
+    font-size: 3rem;
+  }
+  body .warn2,
+  .main .warn2 {
+    font-size: 2rem;
+  }
+  body .warn,
+  .main .warn {
+    font-size: 1rem;
+  }
+}
+
+body .shake1,
+.main .shake1 {
   -webkit-animation: .2s 3 ease-in-out shake;
           animation: .2s 3 ease-in-out shake;
 }
@@ -255,12 +289,14 @@ body .warn:hover,
   }
 }
 
-.move-up {
+body .move-up,
+.main .move-up {
   -webkit-animation: 1s moveup ease-in-out;
           animation: 1s moveup ease-in-out;
 }
 
-.broken {
+body .broken,
+.main .broken {
   -webkit-animation: 3s broken ease-in-out;
           animation: 3s broken ease-in-out;
 }
@@ -345,7 +381,8 @@ body .warn:hover,
   }
 }
 
-.wrap {
+body .wrap,
+.main .wrap {
   background-color: gray;
   height: 610px;
   width: 400px;
@@ -360,11 +397,13 @@ body .warn:hover,
           animation-fill-mode: forwards;
 }
 
-.wrap .content {
+body .wrap .content,
+.main .wrap .content {
   padding: 30px 20px;
 }
 
-.wrap .screen {
+body .wrap .screen,
+.main .wrap .screen {
   background-color: #016401;
   padding: 0px .2rem;
   height: 120px;
@@ -387,17 +426,20 @@ body .warn:hover,
   word-break: break-all;
 }
 
-.wrap .screen .prev {
+body .wrap .screen .prev,
+.main .wrap .screen .prev {
   color: #b6b6b6;
   font-size: 1.2rem;
 }
 
-.wrap .screen .current {
+body .wrap .screen .current,
+.main .wrap .screen .current {
   color: black;
   font-size: 2rem;
 }
 
-.wrap .calculator {
+body .wrap .calculator,
+.main .wrap .calculator {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (63px)[5];
@@ -409,7 +451,8 @@ body .warn:hover,
           column-gap: 10px;
 }
 
-.wrap .calculator button {
+body .wrap .calculator button,
+.main .wrap .calculator button {
   color: white;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
@@ -425,19 +468,23 @@ body .warn:hover,
           box-shadow: 3px 1px #585656;
 }
 
-.wrap .calculator button:hover {
+body .wrap .calculator button:hover,
+.main .wrap .calculator button:hover {
   background-color: #5d637e;
 }
 
-.wrap .calculator button:active {
+body .wrap .calculator button:active,
+.main .wrap .calculator button:active {
   -webkit-box-shadow: 0px;
           box-shadow: 0px;
   border: 5px solid #5c5c5c;
   background-color: #232636;
 }
 
-.wrap .calculator .del,
-.wrap .calculator .hard-reset {
+body .wrap .calculator .del,
+body .wrap .calculator .hard-reset,
+.main .wrap .calculator .del,
+.main .wrap .calculator .hard-reset {
   color: white;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
@@ -453,20 +500,25 @@ body .warn:hover,
   background-color: rgba(192, 64, 25, 0.781);
 }
 
-.wrap .calculator .del:hover,
-.wrap .calculator .hard-reset:hover {
+body .wrap .calculator .del:hover,
+body .wrap .calculator .hard-reset:hover,
+.main .wrap .calculator .del:hover,
+.main .wrap .calculator .hard-reset:hover {
   background-color: rgba(219, 79, 36, 0.781);
 }
 
-.wrap .calculator .del:active,
-.wrap .calculator .hard-reset:active {
+body .wrap .calculator .del:active,
+body .wrap .calculator .hard-reset:active,
+.main .wrap .calculator .del:active,
+.main .wrap .calculator .hard-reset:active {
   -webkit-box-shadow: 0px;
           box-shadow: 0px;
   border: 5px solid #5c5c5c;
   background-color: rgba(143, 33, 0, 0.781);
 }
 
-.wrap .calculator .h-2 {
+body .wrap .calculator .h-2,
+.main .wrap .calculator .h-2 {
   grid-row: span 2;
 }
 /*# sourceMappingURL=calc.css.map */
