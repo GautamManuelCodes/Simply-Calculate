@@ -6,7 +6,7 @@
 }
 
 .background {
-  background: linear-gradient(45deg, #8ebea0, #99cec2);
+  background: linear-gradient(45deg, #a5d1b6, #9de4d3);
 }
 
 .backgroundnew {
@@ -383,7 +383,7 @@ body .broken,
 
 body .wrap,
 .main .wrap {
-  background-color: gray;
+  background-color: #949494;
   height: 610px;
   width: 400px;
   margin: auto;
@@ -404,11 +404,11 @@ body .wrap .content,
 
 body .wrap .screen,
 .main .wrap .screen {
-  background-color: #016401;
+  background-color: rgba(1, 117, 1, 0.822);
   padding: 0px .2rem;
   height: 120px;
   margin-bottom: 2rem;
-  border: 10px solid #1d1d1d;
+  border: 10px solid #3d3a3a;
   border-radius: 7px;
   display: -webkit-box;
   display: -ms-flexbox;

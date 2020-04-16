@@ -5,7 +5,7 @@
 }
 
 .background {
-    background: linear-gradient(45deg, rgb(142, 190, 160), rgb(153, 206, 194));
+    background: linear-gradient(45deg, rgb(165, 209, 182), rgb(157, 228, 211));
 }
 
 .backgroundnew {
@@ -239,7 +239,7 @@ body,
 
     .wrap {
         & {
-            background-color: gray;
+            background-color: rgb(148, 148, 148);
             height: 610px;
             width: 400px;
             margin: auto;
@@ -256,11 +256,11 @@ body,
         }
 
         .screen {
-            background-color: rgb(1, 100, 1);
+            background-color: rgba(1, 117, 1, 0.822);
             padding: 0px .2rem;
             height: 120px;
             margin-bottom: 2rem;
-            border: 10px solid rgb(29, 29, 29);
+            border: 10px solid rgb(61, 58, 58);
             border-radius: 7px;
             display: flex;
             align-items: flex-end;
