@@ -95,19 +95,15 @@ body .warn:hover,
 @media screen and (max-width: 500px) {
   body h1,
   .main h1 {
-    font-size: 1.5rem;
-  }
-  body .none,
-  .main .none {
-    display: none;
+    font-size: 1rem;
   }
   body .big,
   .main .big {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   body .warn2,
   .main .warn2 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   body .warn,
   .main .warn {
@@ -381,13 +377,64 @@ body .broken,
   }
 }
 
+@media screen and (max-width: 450px) {
+  body .wrap,
+  .main .wrap {
+    height: 500px;
+  }
+  body .main,
+  .main .main {
+    padding: 30px;
+    padding-top: 0px;
+  }
+  body .screen,
+  .main .screen {
+    height: 60px;
+  }
+  body .screen body .wrap .screen .prev,
+  body .screen .main .wrap .screen .prev body .wrap .screen .current,
+  body .screen .main .wrap .screen,
+  .main .screen body .wrap .screen .prev,
+  .main .screen .main .wrap .screen .prev body .wrap .screen .current,
+  .main .screen .main .wrap .screen {
+    font-size: 1rem;
+  }
+  body body .wrap .calculator,
+  body .main .wrap .calculator,
+  .main body .wrap .calculator,
+  .main .main .wrap .calculator {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-rows: (7.5vh)[5];
+        grid-template-rows: repeat(5, 7.5vh);
+    row-gap: 10px;
+    -webkit-column-gap: 5px;
+            column-gap: 5px;
+  }
+  body body .wrap .calculator button,
+  body .main .wrap .calculator button,
+  .main body .wrap .calculator button,
+  .main .main .wrap .calculator button {
+    font-size: 1.3rem;
+  }
+  body body .wrap .calculator .del,
+  body body .wrap .calculator .hard-reset,
+  body .main .wrap .calculator .del,
+  body .main .wrap .calculator .hard-reset,
+  .main body .wrap .calculator .del,
+  .main body .wrap .calculator .hard-reset,
+  .main .main .wrap .calculator .del,
+  .main .main .wrap .calculator .hard-reset {
+    font-size: 1rem;
+  }
+}
+
 body .wrap,
 .main .wrap {
   background-color: #949494;
-  height: 610px;
-  width: 400px;
+  max-height: 610px;
   margin: auto;
-  margin-top: 5vh;
+  max-width: 400px;
   border-radius: 10px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;

@@ -21,6 +21,7 @@ body,
     overflow-x: hidden;
     overflow-y: hidden;
 
+
     .instruc,
     .instruc1,
     .instruc2 {
@@ -80,24 +81,21 @@ body,
 
     @media screen and (max-width:500px) {
         h1 {
-            font-size: 1.5rem;
-        }
-
-        .none {
-            display: none;
+            font-size: 1rem;
         }
 
         .big {
-            font-size: 3rem;
+            font-size: 2rem;
         }
 
         .warn2 {
-            font-size: 2rem;
+            font-size: 1rem;
         }
 
         .warn {
             font-size: 1rem;
         }
+
     }
 
     .shake1 {
@@ -237,13 +235,50 @@ body,
         }
     }
 
+    @media screen and (max-width:450px) {
+        .wrap {
+            height: 500px;
+        }
+
+        .main {
+            padding: 30px;
+            padding-top: 0px;
+        }
+
+        .screen {
+            height: 60px;
+
+            body .wrap .screen .prev,
+            .main .wrap .screen .prev body .wrap .screen .current,
+            .main .wrap .screen {
+                font-size: 1rem;
+            }
+        }
+
+        body .wrap .calculator,
+        .main .wrap .calculator {
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 7.5vh);
+            row-gap: 10px;
+            column-gap: 5px;
+
+            button {
+                font-size: 1.3rem;
+            }
+
+            .del,
+            .hard-reset {
+                font-size: 1rem;
+            }
+        }
+    }
+
     .wrap {
         & {
             background-color: rgb(148, 148, 148);
-            height: 610px;
-            width: 400px;
+            max-height: 610px;
             margin: auto;
-            margin-top: 5vh;
+            max-width: 400px;
             border-radius: 10px;
             border-bottom-left-radius: 30px;
             border-bottom-right-radius: 30px;
